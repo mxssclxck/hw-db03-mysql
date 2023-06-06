@@ -135,11 +135,7 @@ SELECT user, plugin, password_lifetime, max_questions, User_attributes FROM mysq
 +------+-----------------------+-------------------+---------------+-------------------------------------------------------------------------------------------------------------------------------------+
 1 row in set (0.00 sec)
 ```
-Для предоставления прав на чтение воспользуемся инструкцией GRANT:
-```bash
-GRANT SELECT ON netology.* TO 'test'@'localhost';
-Query OK, 0 rows affected, 1 warning (0.02 sec)
-```
+
 Даннеые information_schema.user_attributes:
 ```bash
 SELECT * FROM information_schema.user_attributes WHERE user = 'test';
